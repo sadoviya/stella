@@ -1,0 +1,125 @@
+// :root {
+//   --master-text-color: #212121;
+//   --slave-text-color: #757575;
+//   --accent-site-color: #2196f3;
+//   --pure-white-color: #ffffff;
+// }
+
+$master-text-color: #212121;
+$slave-text-color: #757575;
+$accent-site-color: #2196f3;
+$pure-white-color: #ffffff;
+$active-button-color: #188ce8;
+$light-grey-color: #f5f4fa;
+$dark-grey-color: #afb1b8;
+$footer-brown-color: #2f303a;
+$footer-contact-color: rgba(255, 255, 255, 0.6);
+$footer-social-bg: rgba(255, 255, 255, 0.1);
+$footer-input-border: rgba(255, 255, 255, 0.3);
+$box-shadow-color: rgba(0, 0, 0, 0.15);
+$footer-input-color: rgba(255, 255, 255, 0.6);
+$form-input-border: rgba(33, 33, 33, 0.2);
+$form-placeholder-color: rgba(117, 117, 117, 0.5);
+$header-border-color: #ececec;
+// $hero-linear-gradient: rgba(47, 48, 58, 0.4);
+$pure-black-color: #000000;
+$backdrop-bg-color: rgba(0, 0, 0, 0.2);
+$madal-button-border: rgba(0, 0, 0, 0.1);
+$proces-alt-color: rgba(47, 48, 58, 0.8);
+$project-item-shaddow: rgba(0, 0, 0, 0.25);
+$project-description-bg: rgba(33, 150, 243, 0.9);
+$project-text-color: #eeeeee;
+
+$shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+$gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+body {
+  font-family: 'roboto', sans-serif;
+  color: $master-text-color;
+  background-color: $pure-white-color;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-site-color;
+  }
+}
+
+.list {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  &:active {
+    background-color: $active-button-color;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

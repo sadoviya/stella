@@ -2,95 +2,450 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <!-- <link rel="stylesheet" href="./css/fonts.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <!-- Змінити лого на SVG -->
-        <a href="/index.html"><img src="/logo.png" alt="logo" width="350" /></a>
-        <ul>
-          <li><a href="/index.html">Салон</a></li>
-          <li><a href="/portfolio.html">Портфоліо</a></li>
-          <li><a href="/contacts.html">Контакти</a></li>
-        </ul>
-        <ul>
+    <!-- HEADER  -->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__navigation">
+          <a href="./index.html" class="logo logo--dark logo--right"><span class="logo__accent">Web</span>Studio</a>
+          <ul class="header__list list">
+            <li class="header__item">
+              <a href="./index.html" class="header__link link">Салон</a>
+            </li>
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__link header__link--active link">Портфоліо</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__list header__list--right list">
           <li>
-            <a href="mailto:stella@curtains.kiev.ua">stella@curtains.kiev.ua</a>
+            <a href="stella@curtains.kiev.ua" class="header__link header__link--light link">
+              <svg class="header__icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-contact-0"></use>
+              </svg>
+              stella@curtains.kiev.ua
+            </a>
           </li>
-          <li><a href="tel:+380934523536">(093)452-35-36</a></li>
+          <li>
+            <a href="tel:+380934523536" class="header__link header__link--light link">
+              <svg class="header__icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-contact-1"></use>
+              </svg>
+              (093)452-35-36
+            </a>
+          </li>
         </ul>
-      </nav>
+        <!-- MENU-BUTTON -->
+        <button type="button" class="header__button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- MOBILE-MENU -->
+      <div class="mobile is-hidden" data-menu id="mobile-menu">
+        <div class="mobile__container">
+          <div>
+            <button type="button" class="mobile__button" data-menu-close>
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile__list list">
+              <li>
+                <a href="./index.html" class="mobile__link link">Салон</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="mobile__link mobile__link--active link">Портфоліо</a>
+              </li>
+              <li>
+                <a href="" class="mobile__link link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile__contacts">
+            <ul class="mobile__list mobile__list--bottom list">
+              <li>
+                <a href="tel:+380934523536" class="mobile__tel link">(093)452-35-36</a>
+              </li>
+              <li>
+                <a href="mailto:stella@curtains.kiev.ua" class="mobile__mail link">stella@curtains.kiev.ua</a>
+              </li>
+            </ul>
+            <ul class="mobile__social-list">
+              <li>
+                <a href="https://www.instagram.com/salonshtorstella/" class="mobile__social-link mobile__social-link--border link">Instagram</a>
+              </li>
+              <!-- <li>
+                <a href="" class="mobile__social-link mobile__social-link--border link">Twitter</a>
+              </li> -->
+              <li>
+                <a href="https://www.facebook.com/salonshtorstella/" class="mobile__social-link mobile__social-link--border link">Facebook</a>
+              </li>
+              <!-- <li>
+                <a href="" class="mobile__social-link link">LinkedIn</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <section>
-        <h1>Портфоліо</h1>
-        <ul>
-          <li>
-            <img src="" alt="" />
-            <h2></h2>
-            <p></p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h2></h2>
-            <p></p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h2></h2>
-            <p></p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h2></h2>
-            <p></p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h2></h2>
-            <p></p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h2></h2>
-            <p></p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h2></h2>
-            <p></p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h2></h2>
-            <p></p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h2></h2>
-            <p></p>
-          </li>
-        </ul>
+      <section class="section">
+        <!-- FILTER -->
+        <!-- <div class="container filter">
+          <h1 class="visually-hidden">Портфоліо</h1>
+          <ul class="filter__list list">
+            <li>
+              <button type="button" class="filter__button btn">Усі</button>
+            </li>
+            <li>
+              <button type="button" class="filter__button btn">Веб-сайти</button>
+            </li>
+            <li>
+              <button type="button" class="filter__button btn">Додатки</button>
+            </li>
+            <li>
+              <button type="button" class="filter__button btn">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="filter__button btn">Маркетинг</button>
+            </li>
+          </ul>
+        </div> -->
+        <!-- PROJECT -->
+        <div class="container project">
+          <ul class="project__list list">
+            <li class="project__item">
+              <div class="project__image-container">
+                <picture>
+                  <source
+                    srcset="./images/big1.webp 1x, ./images/big1.webp 2x"
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <source
+                    srcset="./images/big1.webp 1x, ./images/big1.webp 2x"
+                    media="(min-width: 768px)"
+                    sizes="354px"
+                  />
+                  <source srcset="./images/big1.webp 1x, ./images/big1.webp 2x" sizes="450px" />
+                  <img src="./images/big1.webp" alt="ноутбук" width="450" />
+                </picture>
+                <p class="project__description">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="project__text-container">
+                <h2 class="project__title">Технокряк</h2>
+                <p class="project__alt">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__image-container">
+                <picture>
+                  <source
+                    srcset="./images/big2.webp 1x, ./images/big2.webp 2x"
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <source
+                    srcset="./images/big2.webp 1x, ./images/big2.webp 2x"
+                    media="(min-width: 768px)"
+                    sizes="354px"
+                  />
+                  <source srcset="./images/big2.webp 1x, ./images/big2.webp 2x" sizes="450px" />
+                  <img src="./images/big2.webp" alt="баскетбол" width="450" />
+                </picture>
+                <p class="project__description">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="project__text-container">
+                <h2 class="project__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                <p class="project__alt">Дизайн</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__image-container">
+                <picture>
+                  <source
+                    srcset="./images/big3.webp 1x, ./images/big3.webp 2x"
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <source
+                    srcset="./images/big3.webp 1x, ./images/big3.webp 2x"
+                    media="(min-width: 768px)"
+                    sizes="354px"
+                  />
+                  <source srcset="./images/big3.webp 1x, ./images/big3.webp 2x" sizes="450px" />
+                  <img src="./images/big3.webp" alt="риба" width="450" />
+                </picture>
+                <p class="project__description">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="project__text-container">
+                <h2 class="project__title">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="project__alt">Додаток</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__image-container">
+                <picture>
+                  <source
+                    srcset="./images/big4.webp 1x, ./images/big4.webp 2x"
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <source
+                    srcset="./images/big4.webp 1x, ./images/big4.webp 2x"
+                    media="(min-width: 768px)"
+                    sizes="354px"
+                  />
+                  <source srcset="./images/big4.webp 1x, ./images/big4.webp 2x" sizes="450px" />
+                  <img src="./images/big4.webp" alt="навушники" width="450" />
+                </picture>
+                <p class="project__description">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="project__text-container">
+                <h2 class="project__title">Проєкт <span lang="en">Prime</span></h2>
+                <p class="project__alt">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__image-container">
+                <picture>
+                  <source
+                    srcset="./images/big5.webp 1x, ./images/big5.webp 2x"
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <source
+                    srcset="./images/big5.webp 1x, ./images/big5.webp 2x"
+                    media="(min-width: 768px)"
+                    sizes="354px"
+                  />
+                  <source srcset="./images/big5.webp 1x, ./images/big5.webp 2x" sizes="450px" />
+                  <img src="./images/big5.webp" alt="коробки" width="450" />
+                </picture>
+                <p class="project__description">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="project__text-container">
+                <h2 class="project__title">Проєкт <span lang="en">Boxes</span></h2>
+                <p class="project__alt">Додаток</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__image-container">
+                <picture>
+                  <source
+                    srcset="./images/big6.webp 1x, ./images/big6.webp 2x"
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <source
+                    srcset="./images/big6.webp 1x, ./images/big6.webp 2x"
+                    media="(min-width: 768px)"
+                    sizes="354px"
+                  />
+                  <source srcset="./images/big6.webp 1x, ./images/big6.webp 2x" sizes="450px" />
+                  <img src="./images/big6.webp" alt="монітор" width="450" />
+                </picture>
+                <p class="project__description">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="project__text-container">
+                <h2 class="project__title">
+                  <span lang="en">Inspiration has no Borders</span>
+                </h2>
+                <p class="project__alt">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__image-container">
+                <picture>
+                  <source
+                    srcset="./images/big7.webp 1x, ./images/big7.webp 2x"
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <source
+                    srcset="./images/big7.webp 1x, ./images/big7.webp 2x"
+                    media="(min-width: 768px)"
+                    sizes="354px"
+                  />
+                  <source srcset="./images/big7.webp 1x, ./images/big7.webp 2x" sizes="450px" />
+                  <img src="./images/big7.webp" alt="книга" width="450" />
+                </picture>
+                <p class="project__description">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="project__text-container">
+                <h2 class="project__title">Видання <span lang="en">Limited Edition</span></h2>
+                <p class="project__alt">Дизайн</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__image-container">
+                <picture>
+                  <source
+                    srcset="./images/big8.webp 1x, ./images/big8.webp 2x"
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <source
+                    srcset="./images/big8.webp 1x, ./images/big8.webp 2x"
+                    media="(min-width: 768px)"
+                    sizes="354px"
+                  />
+                  <source srcset="./images/big8.webp 1x, ./images/big8.webp 2x" sizes="450px" />
+                  <img src="./images/big8.webp" alt="еьткетка" width="450" />
+                </picture>
+                <p class="project__description">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="project__text-container">
+                <h2 class="project__title">Проект <span lang="en">LAB</span></h2>
+                <p class="project__alt">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project__item">
+              <div class="project__image-container">
+                <picture>
+                  <source
+                    srcset="./images/big9.webp 1x, ./images/big9.webp 2x"
+                    media="(min-width: 1200px)"
+                    sizes="370px"
+                  />
+                  <source
+                    srcset="./images/big9.webp 1x, ./images/big9.webp 2x"
+                    media="(min-width: 768px)"
+                    sizes="354px"
+                  />
+                  <source srcset="./images/big9.webp 1x, ./images/big9.webp 2x" sizes="450px" />
+                  <img src="./images/big9.webp" alt="ноутбук" width="450" />
+                </picture>
+                <p class="project__description">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                </p>
+              </div>
+              <div class="project__text-container">
+                <h2 class="project__title">
+                  <span lang="en">Growing Business</span>
+                </h2>
+                <p class="project__alt">Додаток</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <address>
-        <ul>
-          <li>
-            <a
-              href="https://maps.app.goo.gl/XHE5rRUtrEo9mRps5"
-              target="_blank"
-              rel="noopener noreferrer"
-              >м.Бровари, вул.Чорновола, 15</a
-            >
-          </li>
-          <!-- Можливо треба окремо соц мережі (приєднуйтесь) -->
-          <li><a href="">instagram</a></li>
-          <li><a href="">facebook</a></li>
-        </ul>
-      </address>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo-address">
+          <a href="./index.html" class="logo logo--light"><span class="logo__accent">Stella</a>
+          <address class="footer__address">
+            <ul class="list">
+              <li class="footer__address-item">
+                <a
+                  href="https://maps.app.goo.gl/XHE5rRUtrEo9mRps5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__link footer__link--white link"
+                  >Бровари, вул.Чорновола, 15
+                </a>
+              </li>
+              <li class="footer__address-item">
+                <a href="mailto:stella@curtains.kiev.ua" class="footer__link link">stella@curtains.kiev.ua</a>
+              </li>
+              <li class="footer__address-item">
+                <a href="tel:+380934523536" class="footer__link link">(093)452-35-36</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <p class="footer__social-text">приєднуйтесь</p>
+          <ul class="footer__social-list list">
+            <li class="footer__social-item">
+              <a href="https://www.instagram.com/salonshtorstella/" class="footer__social-link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-social-0"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- <li class="footer__social-item">
+              <a href="" class="footer__social-link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-social-1"></use>
+                </svg>
+              </a>
+            </li> -->
+            <li class="footer__social-item">
+              <a href="https://www.facebook.com/salonshtorstella/" class="footer__social-link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-social-2"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- <li class="footer__social-item">
+              <a href="" class="footer__social-link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-social-3"></use>
+                </svg>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+        <!-- <form class="footer__form" autocomplete="off">
+          <label class="footer__label" for="footer-mail">Підпишіться на розсилку</label>
+          <div class="footer__action-container">
+            <input id="footer-mail" type="email" name="email" placeholder="E-mail" class="footer__input" />
+            <button type="submit" class="footer__button btn">
+              Підписатися
+              <svg width="24" height="24" class="footer__icon-send">
+                <use href="./images/sprite.svg#icon-footer-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form> -->
+      </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

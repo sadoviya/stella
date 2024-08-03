@@ -1,0 +1,92 @@
+.project {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    background-color: $pure-white-color;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+    }
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__item:hover &__description {
+    transform: translateY(0);
+  }
+
+  &__image-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__description {
+    padding: 77px 24px;
+    @media screen and (min-width: 768px) {
+      padding: 63px 24px;
+    }
+    @media screen and (max-width: 479px) {
+      padding: 24px 24px;
+      font-size: 4vw;
+    }
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $pure-white-color;
+    background-color: rgba(33, 150, 243, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__text-container {
+    border: 1px solid #eeeeee;
+    border-top: none;
+    padding: 20px 24px 19px 24px;
+  }
+
+  &__title {
+    font-weight: 700;
+@media screen and (max-width: 479px) {
+      font-size: 4vw;
+}
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $master-text-color;
+    margin-bottom: 4px;
+  }
+
+  &__alt {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $slave-text-color;
+  }
+}

@@ -1,0 +1,48 @@
+.process {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    width: calc((100% - 60px) / 3);
+    position: relative;
+  }
+
+  // &__image {
+  //   display: block;
+  //   max-width: 100%;
+  //   height: auto;
+  // }
+
+  &__alt {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $pure-white-color;
+    background-color: $proces-alt-color;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
